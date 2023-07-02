@@ -2,18 +2,62 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastExpress"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".screen.InfoActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTIEQ9Wii9psDK0i5YB3dWkmdRpWyIvRU" />
+
+        <activity
+            android:name=".screen.restaurant.detail.map.OpenMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_open_maps" />
+        <activity
+            android:name=".screen.main.order.checkout.map.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".screen.main.order.checkout.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.restaurant.detail.RestaurantDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.auth.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.auth.SiginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +65,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".screen.main.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
     </application>
-
 </manifest>
