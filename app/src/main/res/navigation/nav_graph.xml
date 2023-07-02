@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.devapp.foodexpress.screen.main.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="uz.devapp.foodexpress.screen.main.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="uz.devapp.foodexpress.screen.main.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="uz.devapp.foodexpress.screen.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/restaurantDetailActivity"
+        android:name="uz.devapp.foodexpress.screen.restaurant.detail.RestaurantDetailActivity"
+        android:label="activity_restaurant_detail"
+        tools:layout="@layout/activity_restaurant_detail" />
+    <dialog
+        android:id="@+id/feedbackFragment"
+        android:name="uz.devapp.foodexpress.screen.restaurant.detail.feedback.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>
