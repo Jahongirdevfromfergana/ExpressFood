@@ -42,13 +42,8 @@
             android:layout_gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:text="Developed by" />
+            android:text="Created by Jahongir Muhammadjonov" />
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/artboardsvg" />
 
     </LinearLayout>
 

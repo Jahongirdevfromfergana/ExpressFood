@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 if (item.itemId == R.id.info) {
                     startActivity(Intent(this@MainActivity, InfoActivity::class.java))
                 } else if (item.itemId == R.id.call) {
-                    val profile_telegram = Intent(ACTION_VIEW, Uri.parse("https://t.me/Mobiler007"))
+                    val profile_telegram = Intent(ACTION_VIEW, Uri.parse("https://t.me/Jahongir_Muhammadjonov"))
                     startActivity(profile_telegram)
 
                 } else if (item.itemId == R.id.exit) {
