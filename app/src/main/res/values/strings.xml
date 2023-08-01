@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FastExpress</string>
+    <string name="app_name">ExpressFood</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_the_map"><u>Open the map</u></string>
     <string name="title_activity_maps">MapsActivity</string>
